@@ -1,4 +1,4 @@
-# E-Class - Application Web de Gestion des Classes en Ligne
+# E-Class - Web-Based Class Management Platform
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
@@ -6,60 +6,67 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Une application web dédiée à la gestion de classes en ligne permettant aux enseignants de gérer leurs cours et aux étudiants d'accéder aux ressources pédagogiques. 
+A web application dedicated to online class management, enabling professors to manage their courses and allowing students to seamlessly access educational resources.
 
-Développé dans le cadre du module Programmation Web 2 à la Faculté des Sciences d'El Jadida (Université Chouaib Doukkali) pour l'année universitaire 2025-2026.
+Developed as part of the Web Programming 2 module at the Faculty of Sciences of El Jadida (Chouaïb Doukkali University) for the 2025–2026 academic year.
 
-## À Propos du Projet
+## About the Project
 
-L'intégration des outils numériques dans l'enseignement nécessite un prolongement pour le partage de ressources et la communication. La gestion classique d'un cours par e-mail ou réseaux sociaux pose des problèmes de dispersion des supports et de manque de centralisation.
+Integrating digital tools into higher education requires a dedicated platform for resource sharing and communication. Traditional course management via email or social media leads to fragmented course materials and a lack of centralization.
 
-Cette application propose une plateforme web centralisée permettant de dématérialiser les échanges pédagogiques de manière légère et ergonomique, contrairement aux solutions lourdes existantes.
+This application provides a centralized web platform designed to digitize educational exchanges in a lightweight, ergonomic, and user-friendly manner, avoiding the overhead of heavy existing enterprise solutions.
 
-## Architecture & Choix Techniques
+## Architecture & Technical Choices
 
-Ce projet a intégré une phase complète de génie logiciel pour structurer l'architecture avant le développement :
+This project incorporated a complete software engineering phase to structure the architecture prior to development:
 
-*   **Architecture Serveur :** Utilisation de PHP pour la flexibilité, l'interaction avec la base de données, le traitement des formulaires et la gestion sécurisée des sessions utilisateurs.
-*   **Base de Données Relationnelle (MySQL) :** Conception stricte utilisant des clés primaires et étrangères pour garantir l'intégrité référentielle. La base gère des relations complexes de type "Un à Plusieurs" et "Plusieurs à Plusieurs" via des tables d'association.
-*   **Modélisation UML :** Analyse préalable incluant la création de diagrammes de cas d'utilisation et de classes via Astah UML pour assurer la cohérence et la fiabilité du système.
+*   **Server-Side Architecture:** Built with PHP for flexibility, database interaction, form processing, and secure user session management.
+*   **Relational Database (MySQL):** Designed with strict primary and foreign keys to enforce referential integrity. The database manages complex One-to-Many and Many-to-Many relationships using junction tables.
+*   **UML Modeling:** Conducted initial system analysis using Astah UML to generate Use Case and Class diagrams, ensuring system consistency and architectural reliability.
 
-## Fonctionnalités Principales
+## Core Features
 
-### Espace Professeur
-*   **Gestion des Classes :** Création de classes virtuelles.
-*   **Administration :** Suivi des demandes d'inscription avec la possibilité de les accepter ou de les refuser de manière centralisée.
-*   **Ressources Pédagogiques :** Téléversement de fichiers (ex: PDF) pour mettre le contenu des cours en ligne et le rendre immédiatement accessible.
-*   **Communication :** Publication d'annonces à destination des étudiants pour informer sur les examens ou les événements liés aux modules.
-*   **Évaluations :** Création et attribution de devoirs en précisant une date limite de soumission et une description détaillée.
-*   **Interactions & Profil :** Consultation et réponse aux questions posées par les étudiants. Gestion du compte personnel, avec la possibilité de retirer un étudiant d'une classe.
+### Professor Dashboard
+*   **Class Management:** Create virtual classrooms.
+*   **Administration:** Review student enrollment requests with the ability to accept or decline them centrally.
+*   **Educational Resources:** Upload files (e.g., PDFs) to publish course content online for immediate access.
+*   **Communication:** Publish global announcements to notify students about exams or module updates.
+*   **Assignments:** Create and assign homework, specifying submission deadlines and detailed instructions.
+*   **Interactions & Profile:** View and answer student inquiries. Manage user accounts, with options to remove students from a class.
 
-### Espace Étudiant
-*   **Accès aux Cours :** Recherche et inscription aux classes existantes via un code fourni par l'enseignant.
-*   **Ressources & Devoirs :** Consultation et téléchargement des supports de cours mis en ligne, ainsi que l'accès détaillé aux devoirs à rendre.
-*   **Suivi Pédagogique :** Consultation chronologique de toutes les annonces publiées par les enseignants pour rester informé en temps réel.
-*   **Questions / Réponses :** Envoi de questions directes aux professeurs et suivi des réponses fournies.
-*   **Gestion de Profil :** Possibilité de se désinscrire d'un cours ou de supprimer son compte.
+### Student Dashboard
+*   **Course Access:** Search and enroll in existing classes using a unique access code provided by the instructor.
+*   **Resources & Assignments:** Access and download uploaded course materials and view detailed assignment requirements.
+*   **Academic Tracking:** View a chronological feed of all instructor announcements to stay updated in real time.
+*   **Q&A Section:** Submit direct questions to professors and track responses.
+*   **Profile Management:** Option to unenroll from a class or delete the student account.
 
-## Environnement de Développement
+## Development Environment
 
-*   **Langages Back-end :** PHP et requêtes SQL.
-*   **Langages Front-end :** Structure HTML5, mise en forme CSS3, et intégration de JavaScript.
-*   **Serveur Local & SGBD :** Environnement XAMPP incluant Apache et MySQL (MariaDB).
-*   **Outils :** IDE PhpStorm (édition de code) et logiciel Astah UML (conception).
+*   **Backend Stack:** Native PHP and SQL queries.
+*   **Frontend Stack:** HTML5 structure, CSS3 styling, and JavaScript integration.
+*   **Local Server & RDBMS:** XAMPP environment running Apache and MySQL (MariaDB).
+*   **Tools & Modeling:** PhpStorm IDE and Astah UML.
 
-## Installation & Déploiement
+## Installation & Deployment
 
-1. Installez l'environnement de développement XAMPP.
-2. Clonez ce dépôt dans le répertoire `htdocs` de votre installation XAMPP.
-3. Démarrez les services Apache et MySQL via le panneau de contrôle.
-4. Importez la base de données relationnelle MySQL (fichier `.sql` fourni) dans votre environnement local.
-5. Accédez à l'application via votre navigateur Web à l'adresse `http://localhost/nom-du-dossier`.
+1. Install the XAMPP development environment.
+2. Clone this repository into the `htdocs` directory of your XAMPP installation:
+   ```bash
+   git clone [https://github.com/Med-Atir/e-class-web.git](https://github.com/Med-Atir/e-class-web.git)
+   Start Apache and MySQL services via the XAMPP Control Panel.
 
-## Licence
+3. Import the provided relational MySQL database (.sql file) into phpMyAdmin / MySQL.
 
-**All Rights Reserved.**
-Le code source de ce projet est partagé publiquement uniquement à des fins de consultation et de portfolio. Toute reproduction, modification ou distribution non autorisée est strictement interdite.
+4. Access the application in your browser at http://localhost/e-class-web.
 
----
-*Réalisé par MOHAMMED ATIR.*
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. You are free to use, modify, and distribute this software for academic, personal, or commercial purposes.
+Third-Party Software & Stack
+
+    PHP: Server-side scripting runtime (PHP License).
+
+    MySQL: Relational database engine (GPLv2 / MySQL FOSS Exception).
+
+Developed by Mohammed Atir.
